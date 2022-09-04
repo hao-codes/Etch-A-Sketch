@@ -1,7 +1,8 @@
-const grid = document.querySelector('grid');
+//const grid = document.getElementsByClassName("grid");
+//console.log(grid);
 const div = document.createElement('squareDiv');
 //div.setAttribute("background: black");
-container.appendChild(div);
+
 
 
 // create square divs
@@ -10,19 +11,31 @@ container.appendChild(div);
 // add button, asking for size of grid in the same space, max = 100, for a new sketch pad
 
 
-//function gor creating grid of divs
-function generateDivs(16) {
-    var e = document.body;
-    for (let i = 0; i < 16; i++) {
+function is_dom_element(obj) {
+    return !!(obj && obj.nodeType === 1);
+  };
+
+
+
+//function for creating grid of divs
+function generateDivs(size) {
+    //var body = document.body;
+    const grid = document.querySelector(".grid");
+    console.log(is_dom_element(grid));
+    for (let i = 0; i < size; i++) {
         let row = document.createElement("div");
         row.className = "row";
-    }
-    for (let j = 1; j <= 16; j++) {
-        let cell = document.createElement("div");
-        cell.className = "gridsquare";
-        row.appendChild(cell);
-    }
-    e.appendChild(row);
+    
+        for (let j = 1; j <= size; j++) {
+            let cell = document.createElement("div");
+            cell.className = "cell";
+            cell.innerText = "   ";
+            row.appendChild(cell);
+            };
+        grid.appendChild(row);
+        };
+   
 }
-generateDivs(16);
-document.getElementById("grid").innerText = e.innerHTML;
+
+generateDivs(4);
+//document.getElementById("grid").innerText = e.innerHTML;

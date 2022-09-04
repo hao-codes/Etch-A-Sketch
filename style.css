@@ -1,4 +1,23 @@
 .grid {
     border-color: black;
+    border-style: solid;
     display: flex;
+    color : red;
+    background-color: white;
+    text-align: center;
+ 
+    
+}
+.row {
+    border-style: dotted;
+    border-color: blue;
+    display: flex;
+}
+
+.cell {
+    border-style: solid;
+    border-color: lightblue;
+    background-color: green;
+    height: 7px;
+    width: 7px;
 }
