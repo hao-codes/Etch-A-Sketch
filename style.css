@@ -5,11 +5,11 @@ body {
 
 .grid {
     
-    border-color: black;
     border-style: solid;
+    border-color: black;
     display: flex;
-    color : red;
-    background-color: lightgreen;
+    
+    background-color: white;
     display: grid;
     width: 400px;
     height: 400px;
@@ -17,8 +17,9 @@ body {
     
 }
 .row {
-    border-style: dotted;
-    border-color: blue;
+    
+    border-color: grey;
+    border-width: 1px;
     display: flex;
     justify-content: center;
 
@@ -26,7 +27,7 @@ body {
 
 .cell {
     border-style: solid;
-    border-color: lightblue;
-    
+    border-color: lightgrey;
+    border-width: 1px;
    
 }
