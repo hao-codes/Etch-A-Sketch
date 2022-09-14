@@ -1,6 +1,9 @@
 body {
-    display: grid;
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+    
+    align-items: center;
     background-color: #B8D0DD;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -45,4 +48,27 @@ button, .gridsizeSubmit {
 
 #currentGridsize {
     display: inline-flex;
+}
+
+img, #githublogo {
+    width: 18px;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+
+}
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+    
+
+}
+
+
+a:hover {
+    color: grey
 }
