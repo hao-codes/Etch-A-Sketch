@@ -51,7 +51,6 @@ function checkGridsize() {
 
 };
 
-
 // set gridsize and check if size is in [1, 100]
 gridsizeSubmit.addEventListener('click', checkGridsize);
 
@@ -84,7 +83,6 @@ function generateDivs(size) {
 
 }
 
-
 grid.addEventListener('mouseover', (event) => event.target.style.backgroundColor = "#c1afb7");
 
 // button for clearing grid back to white
@@ -96,7 +94,3 @@ clearButton.addEventListener('click', function onClick(event) {
     cells[k].style.backgroundColor = "white";
   };
 });
-
-function is_dom_element(obj) {
-  return !!(obj && obj.nodeType === 1);
-};
