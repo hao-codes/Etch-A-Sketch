@@ -37,7 +37,6 @@ function checkGridsize() {
 
   console.log("Gridsize :" + gridsize.toString());
 
-
   if (Number.isInteger(gridsize) == false || gridsize > 100 || gridsize < 1) {
     alert("Invalid input, please enter a number between 1 and 100");
   } else {
