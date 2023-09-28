@@ -41,9 +41,7 @@ function checkGridsize() {
     alert("Invalid input, please enter a number between 1 and 100");
   } else {
 
-    //console.log(percentage);
     grid.innerHTML = '';
-
     generateDivs(gridsize);
     currentGridsize.innerHTML = gridsize.toString() + " x " + gridsize.toString();
   }
@@ -64,7 +62,7 @@ function generateDivs(size) {
   for (let i = 0; i < size; i++) {
     let row = document.createElement("div");
 
-    //console.log(percentage);
+
     row.className = "row";
 
     for (let j = 1; j <= size; j++) {
@@ -87,7 +85,7 @@ grid.addEventListener('mouseover', (event) => event.target.style.backgroundColor
 // button for clearing grid back to white
 clearButton.addEventListener('click', function onClick(event) {
   const cells = document.querySelectorAll(".cell");
-  // console.log(cells);
+
   document.querySelectorAll(".grid")[0].style.backgroundColor = "white";
   for (let k = 0; k < cells.length; k++) {
     cells[k].style.backgroundColor = "white";
